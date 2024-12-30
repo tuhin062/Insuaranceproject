@@ -1,0 +1,1084 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f9f9f9;
+    color: #6c757d;
+}
+
+/* Navbar 1 design starts here */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F5F9;
+    padding: 0.5rem 7rem;
+    margin-bottom: 0rem !important;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Smooth Transition for Navbar 1 */
+.navbar.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add smooth hide effect */
+
+/* Left Section */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #7C7C7E;
+    cursor: pointer;
+}
+
+.navbar-left i {
+    font-size: 0.875rem;
+    color: #025FC9;
+}
+
+.navbar-left span {
+    color: #6C757D;
+}
+
+/* Divider */
+.divider {
+    width: 0.0625rem;
+    height: 1.5rem;
+    background-color: #ddd;
+    margin: 0 0.9375rem;
+    /* Adds horizontal spacing (left and right) */
+}
+
+
+/* Center Section */
+.navbar-center {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes left and right content to their respective edges */
+    align-items: center;
+    flex: 1;
+    /* Makes the center div take up all available space */
+    padding: 0 1.25rem;
+    /* Adds some spacing inside */
+}
+
+/* Center Left Section */
+.navbar-center-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #7C7C7E;
+    cursor: pointer;
+}
+
+.navbar-center-left i {
+    font-size: 0.875rem;
+    color: #025FC9;
+}
+
+.navbar-center-left span {
+    color: #6C757D;
+}
+
+/* Center Right Section */
+.navbar-center-right {
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
+    /* Spacing between social media icons */
+    cursor: pointer;
+}
+
+.navbar-center-right i {
+    font-size: 0.875rem;
+    color: #025FC9;
+    /* Default icon color */
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+    cursor: pointer;
+}
+
+.navbar-center-right i:hover {
+    color: #025FC9;
+    /* Highlighted icon color on hover */
+}
+
+
+/* Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    color: #7C7C7E;
+}
+
+.navbar-language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar-language i {
+    font-size: 0.875rem;
+    color: #025FC9;
+}
+
+.navbar-language span {
+    color: #6C757D;
+}
+
+/* Hover Effect */
+.navbar-left:hover,
+.navbar-language:hover,
+.navbar-center-left:hover {
+    color: #025FC9;
+    transition: color 0.3s ease;
+}
+
+/* Navbar 1 design ends here */
+
+/* Navbar 2 General Styles */
+.navbar-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 7.1875rem;
+    border-bottom: 0.0625rem solid #ddd;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    /* Ensure it doesn't overlap with content */
+}
+
+/* Left Section: Brand Logo */
+.navbar-2-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand-logo i {
+    font-size: 2.5rem;
+    color: #025FC9;
+}
+
+.brand-info .brand-name {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #025FC9;
+    font-family: "DM Sans", sans-serif;
+    padding-left: 0.4375rem;
+}
+
+/* Center Section: Navigation Menus */
+.navbar-2-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Distribute space */
+    background-color: #F2F5F9;
+    padding: 0.4375rem 1.25rem;
+    margin: 0 1.875rem;
+    border-radius: 0.625rem;
+    flex-grow: 1;
+    /* Make this section fill available space */
+}
+
+/* Left Side of Center (Navigation Menus) */
+.navbar-2-centerleft {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.25rem;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #6C757D;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.nav-menu a i {
+    font-size: 1rem;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #025FC9;
+}
+
+.nav-menu .dropdown a i {
+    font-size: 0.75rem;
+}
+
+/* Right Side of Center (Search and Quote Button) */
+.navbar-2-centerright {
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
+}
+
+/* Search Button */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 0.375rem 0.625rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 1.25rem 0 0 1.25rem;
+    outline: none;
+    font-size: 0.875rem;
+    width: 11.25rem;
+}
+
+.search-button {
+    font-weight: 900;
+    background-color: #025FC9;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.0625rem;
+    /* Adjust padding to make width and height equal */
+    border-radius: 50%;
+    /* Makes the button circular */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Added transition for a subtle scale effect */
+}
+
+.search-button i {
+    font-size: 0.875rem;
+}
+
+.search-button:hover {
+    background-color: #005bb5;
+}
+
+/* Quote Button */
+.quote-button {
+    background-color: #025FC9;
+    color: #fff;
+    border: none;
+    padding: 0.625rem 1.5625rem;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 1.0625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-button:hover {
+    background-color: #025FC9;
+}
+
+/* Right Section: Contact Icon + Call Info */
+.navbar-2-right {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.contact-icon {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: #F2F5F9;
+    color: #025FC9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875rem;
+}
+
+.call-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-2-right .call-title {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+
+}
+
+.navbar-2-right .call-number {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #16243d !important;
+    line-height: 1.5;
+}
+
+/* Mobile View: Breadcrumb Menu */
+.navbar-2-mobile {
+    display: none;
+}
+
+.breadcrumb-button {
+    background: none;
+    border: 0.1875rem solid #025fc9;
+    border-radius: 0.625rem;
+    padding: 0.5rem 0.9375rem;
+    font-size: 1.5rem;
+    color: #025FC9;
+    cursor: pointer;
+}
+
+
+
+
+/* feature-container css starts here */
+.features-section {
+    background-color: #f2f5f9;
+    /* Light gray background for the parent section */
+    padding: 3.125rem 5rem;
+    /* Space around the content */
+}
+
+.features-container {
+    text-align: center;
+    /* Center-align all text within the div */
+    border-radius: 0.5rem;
+    /* Rounded corners for the container */
+    padding: 3.125rem 7.8125rem;
+}
+
+.features-container h2 {
+    font-size: 1.5rem;
+    /* Larger font size for the main heading */
+    color: #015fc9;
+    /* Brand color */
+    margin-bottom: 0.5rem;
+    /* Space between headings */
+    margin-top: 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.features-container h3 {
+    font-size: 3.5rem;
+    /* Slightly smaller font for the subheading */
+    color: #16243d;
+    /* Darker color for the subheading */
+    margin-bottom: 1.25rem;
+    /* Space below the subheading */
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+
+}
+
+.features-container p {
+    font-size: 1rem;
+    /* Standard font size for the paragraph */
+    color: #6c757d;
+    /* Gray color for text */
+    line-height: 1.5;
+    /* Better readability with increased line height */
+    font-family: "Inter", sans-serif;
+}
+
+/* Features Container 2 CSS starts here */
+.features-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: space-between;
+    padding: 0 2.125rem;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(25% - 1.0625rem);
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+    padding-top: 0 !important;
+    transition: transform 0.5s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.2);
+    background-color: #015FC9;
+}
+
+/* Feature Icon Styling */
+.feature-icon {
+    margin-bottom: 0.9375rem;
+    color: #015fc9;
+    position: relative;
+    /* Needed for the pseudo-element positioning */
+    background-color: #F2F5F9;
+    padding: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    overflow: hidden;
+    /* Ensures the pseudo-element doesn't go outside */
+    transition: color 0.3s;
+    /* For the text color */
+}
+
+/* Pseudo-element for the curtain effect */
+.feature-icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #16243d;
+    /* Curtain color */
+    transform: translateY(-100%);
+    /* Initially hide the curtain above */
+    transition: transform 0.5s ease;
+    /* Smooth animation */
+    z-index: 0;
+    /* Behind the text/icon */
+}
+
+/* On hover, slide the curtain down */
+.feature-box:hover .feature-icon::after {
+    transform: translateY(0);
+    /* Bring the curtain into view */
+}
+
+/* Ensure text/icon stays above the curtain */
+.feature-icon i {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.feature-box:hover .feature-icon i {
+    color: #ffffff;
+    /* Change icon color on hover */
+}
+
+
+/* Heading Styling */
+.feature-box h4 {
+    transition: color 0.3s;
+    margin-bottom: 1.5rem !important;
+    font-size: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #16243d;
+}
+
+.feature-box:hover h4 {
+    color: #ffffff;
+}
+
+/* Paragraph Styling */
+.feature-box p {
+    margin-bottom: 1.5rem;
+    transition: color 0.3s;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+.feature-box:hover p {
+    color: white;
+}
+
+/* Learn More Button Styling */
+.learn-more-btn {
+    padding: 0.5rem 1.5rem !important;
+    background-color: #015fc9;
+    color: #ffffff;
+    border: none;
+    border-radius: 50rem !important;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Inter", sans-serif;
+
+}
+
+.learn-more-btn:hover {
+    background-color: #16243d !important;
+    color: white !important;
+}
+
+.feature-box:hover .learn-more-btn {
+    background-color: #ffffff;
+    color: #015fc9;
+}
+
+/* feature-content css ends here
+
+/* About Section General Styles */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    /* Side-by-side layout */
+    justify-content: space-between;
+    /* Space between flexboxes */
+    align-items: center;
+    /* Vertically align items */
+    padding: 3.125rem 7.1875rem;
+    /* Section padding */
+    background-color: #F2F5F9;
+    /* Light background */
+    gap: 1.25rem;
+    /* Space between flexboxes */
+}
+
+/* Left Side Styling */
+.about-section-side-1 {
+    flex: 1;
+    /* Equal width as the right side */
+    padding: 3rem;
+    /* Add padding inside the side */
+    background-color: white;
+    border-radius: 0.625rem !important;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+.about-section-side-1 h2 {
+    font-size: 1.5rem;
+    color: #015fc9;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.about-section-side-1 h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "DM Sans", sans-serif;
+    color: #16243d;
+}
+
+.about-section-side-1 p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+.about-section-side-1 ul {
+    list-style: none;
+    /* Remove default bullets */
+    padding: 0;
+    /* Remove default padding */
+    margin: 1.25rem 0;
+    /* Add space above and below */
+}
+
+/* List Items */
+.about-section-side-1 li {
+    display: flex;
+    /* Align icon and text horizontally */
+    align-items: center;
+    color: #16243d;
+    margin-top: 0;
+    margin-bottom: 1rem !important;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Font Awesome Check Icon Styling */
+.about-section-side-1 li i {
+    color: #015fc9;
+    /* Icon color */
+    margin-right: 0.625rem;
+    /* Space between icon and text */
+    font-size: 1.2rem;
+}
+
+.about-section-side-1 .learn-more-btn {
+    padding: 0.5rem 1.5rem;
+    color: #ffffff;
+    border: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    transition: .5s;
+    border-radius: 50rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+    background-color: #015fc9;
+}
+
+.about-section-side-1 .learn-more-btn:hover {
+    background-color: #013d90;
+}
+
+/* Right Side Styling */
+.about-section-side-2 {
+    flex: 1;
+    /* Equal width as the left side */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background-color: white;
+}
+
+.about-section-side-2 img {
+    max-width: 100%;
+    /* Responsive image */
+    height: auto;
+    border-radius: 0.625rem;
+    /* Rounded corners for the image */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* About Section General Styles Ends Here */
+
+
+
+
+/* Footer general styles */
+.footer {
+    background-color: #16243D;
+    padding: 0rem 6.5625rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* Footer 2 styles */
+.footer-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.75rem 0.75rem;
+    background-color: #16243D;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+}
+
+/* Left Section: Footer Boxes */
+.footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow boxes to wrap on small screens */
+    width: 70%;
+    /* Take 70% of the width */
+}
+
+/* Flex Container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    /* Space between flex items */
+    padding: 1.875rem 0rem;
+}
+
+/* Flex Box Styles */
+.flex-box {
+    background-color: #16243D;
+    color: #fff;
+    padding: 0rem 0rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+/* Brand Description Box */
+.brand-description {
+    width: 43%;
+}
+
+.brand-description .box-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-family: "DM Sans", serif !important;
+}
+
+.brand-description .box-description {
+    font-size: 1rem;
+    color: white;
+    line-height: 2.1875rem;
+}
+
+/* Brand Description Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 0.9375rem;
+    margin-top: 1.25rem;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #025FC9;
+    /* White icons on a dark background */
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #025FC9;
+    /* Hover effect for icons */
+    color: #fff;
+}
+
+/* Quick Links Box */
+.quick-links {
+    width: 23%;
+}
+
+.quick-links .box-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-family: "DM Sans", serif;
+}
+
+.quick-links .links-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links .links-list li {
+    margin-bottom: 0.625rem;
+}
+
+.quick-links .links-list a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.quick-links .links-list a i {
+    margin-right: 0.625rem;
+}
+
+.quick-links .links-list a:hover {
+    text-decoration: underline;
+}
+
+/* Instagram Feed Box */
+.instagram-feed {
+    width: 43%;
+}
+
+.instagram-feed .box-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.instagram-feed .instagram-images {
+    display: flex;
+    gap: 0.625rem;
+    flex-wrap: wrap;
+}
+
+.instagram-feed .instagram-images img {
+    width: 25%;
+    /* Adjust image size */
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.insegment-footer-divider {
+    width: 100%;
+    height: 0.0625rem;
+    background-color: #2f3941;
+    margin: 3.125rem 3.125rem;
+}
+
+.footer-box {
+    display: flex;
+    align-items: left;
+    gap: 0.9375rem;
+    width: 33%;
+    /* Each box takes up 48% of the width for 2-column layout */
+    text-align: left;
+}
+
+.footer-icon {
+    width: 4.125rem;
+    height: 4.125rem;
+    background-color: #025FC9;
+    color: #fff;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer-description {
+    color: #787878;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Right Section: Newsletter, Search, and Call */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    /* Take 30% of the width */
+    padding-left: 1.875rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+    margin-bottom: 1.25rem;
+}
+
+.newsletter h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter p {
+    color: #fff;
+    /* Changed to white */
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    line-height: 2.1875rem;
+}
+
+/* Container for Search Box and Signup Button */
+.newsletter-form-container {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+    /* Added for better alignment */
+    background-color: #fff;
+    /* White background for the container */
+    padding: 0.625rem;
+    border-radius: 3.125rem;
+    width: 95%;
+}
+
+.newsletter-input {
+    width: 70%;
+    padding: 0.625rem;
+    border: none;
+    border-radius: 0.3125rem;
+    font-size: 0.875rem;
+    background-color: transparent;
+    /* Search box with no background */
+}
+
+.newsletter-signup {
+    padding: 0.625rem 1.25rem;
+    background-color: #025FC9;
+    color: #fff;
+    border: none;
+    border-radius: 3.125rem;
+    font-size: 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+    /* Prevents the text from wrapping */
+}
+
+.newsletter-signup:hover {
+    background-color: #005bb5;
+}
+
+/* Footer Call Section */
+.footer-call {
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.contact-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #F2F5F9;
+    color: #025FC9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875rem;
+}
+
+.call-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.9375rem;
+}
+
+.call-title {
+    font-size: 1rem;
+    color: #787878;
+    /* Changed to #787878 */
+    font-weight: 600;
+}
+
+.call-number {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    /* Changed to white */
+}
+
+/* Footer 2 Styles ends here */
+
+
+
+
+/* Footer Divider with Red Color */
+.footer-divider {
+    width: 100%;
+    height: 0.0625rem;
+    background-color: #2f3941;
+}
+
+/* Footer 3 Styles starts here */
+.footer-3-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Ensures the content stretches across the full width */
+}
+
+.footer-3-left,
+.footer-3-right {
+    flex: 1;
+    /* Ensures each part takes up 50% width */
+}
+
+.footer-3-left {
+    text-align: right;
+    /* Right-align the text inside the left flexbox */
+    padding-right: 0.625rem;
+    /* Padding to the right */
+}
+
+.footer-3-right {
+    text-align: left;
+    /* Left-align the text inside the right flexbox */
+    padding-left: 0.625rem;
+    /* Padding to the left */
+}
+
+.footer-3-left-text,
+.footer-3-right-text {
+    display: block;
+    /* Ensures text is displayed correctly */
+    color: #6C757D;
+    /* Grey color for non-highlighted text */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-3-left-text .highlight,
+.footer-3-right-text .highlight {
+    color: #fff;
+    /* White color for highlighted text */
+    text-decoration: underline;
+    /* Underline the highlighted parts */
+}
+
+/* Footer General Styles */
+.footer-3 {
+    background-color: #16243D;
+    padding: 1.5rem 7.1875rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+}

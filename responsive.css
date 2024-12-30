@@ -1,0 +1,628 @@
+/* Mobile-Centric CSS Modifications */
+@media (max-width: 768px) {
+    /* Navbar 1 design starts here */
+
+    /* General rule to hide navbar on mobile devices */
+
+    .navbar {
+        display: none;
+        /* Hides the entire navbar */
+    }
+
+    /* Navbar 1 design ends here */
+
+    /* Navbar 2 design starts here */
+    .navbar-2-center,
+    .navbar-2-right {
+        display: none;
+        /* Hide nav menus and right section */
+    }
+
+    .navbar-2 {
+        padding: 1.25rem 2.9375rem !important;
+    }
+
+    .navbar-2-left {
+        margin-right: 3.125rem;
+        /* Add gap between left section and breadcrumb button */
+    }
+
+    .navbar-2-mobile {
+        display: block;
+        /* Show breadcrumb menu */
+    }
+
+    /* Navbar 2 design ends here */
+    /* Features Container design starts here */
+    .features-section {
+        padding: 1.875rem 1.25rem;
+        /* Reduce padding for smaller screens */
+    }
+
+    .features-container {
+        padding: 1.875rem 0.9375rem;
+        /* Adjust inner padding for mobile view */
+    }
+
+    .features-container h2 {
+        font-size: 1.25rem;
+        /* Slightly smaller font size for headings */
+    }
+
+    .features-container h3 {
+        font-size: 2rem;
+        margin-bottom: 0.9375rem;
+        /* Adjust spacing */
+    }
+
+    .features-container p {
+        font-size: 0.875rem;
+        /* Slightly smaller font for paragraphs */
+        line-height: 1.4;
+        /* Maintain readability with adjusted line height */
+    }
+
+    .features-container-2 {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0rem 1rem;
+    }
+
+    /* Feature Box Layout */
+    .feature-box {
+        width: 100%;
+        /* Full width for mobile */
+        padding: 1rem;
+        padding-top: 0rem !important;
+    }
+
+    /* Icon Styling */
+    .feature-icon {
+        margin-bottom: 0.75rem;
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+    }
+
+    /* Heading Styling */
+    .feature-box h4 {
+        font-size: 1.25rem;
+        /* Adjust font size for smaller screens */
+        margin-bottom: 0.75rem;
+    }
+
+    /* Paragraph Styling */
+    .feature-box p {
+        font-size: 0.875rem;
+        /* Reduce font size slightly */
+        margin-bottom: 1rem;
+    }
+
+    /* Button Styling */
+    .learn-more-btn {
+        font-size: 0.875rem;
+        /* Smaller font size for the button */
+        padding: 0.4rem 1.25rem;
+        /* Adjust padding for smaller buttons */
+    }
+
+    /*Features Container ends here*/
+
+
+    .footer {
+        padding: 1.25rem;
+        font-size: 0.875rem;
+        /* Reduce base font size for smaller screens */
+    }
+
+    /* Footer 2 styles */
+    .footer-2 {
+        flex-direction: column;
+        /* Stack sections vertically */
+        padding: 2.5rem 1.25rem;
+    }
+
+    /* Left Section: Footer Boxes */
+    .footer-left {
+        width: 100%;
+        /* Take full width */
+    }
+
+    .flex-container {
+        flex-direction: column;
+        /* Stack flex boxes vertically */
+        gap: 1.25rem;
+        /* Maintain spacing between boxes */
+    }
+
+    .flex-box {
+        width: 100%;
+        /* Full width for each flex box */
+    }
+
+    /* Brand Description Box */
+    .brand-description .box-title {
+        font-size: 2.1875rem;
+        /* Smaller font size for titles */
+    }
+
+    .brand-description .box-description {
+        font-size: 1rem;
+        line-height: 2.1875rem;
+    }
+
+    .social-icons a {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: 0.875rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Quick Links Box */
+    .quick-links .box-title {
+        font-size: 1.25rem;
+    }
+
+    .quick-links .links-list a {
+        font-size: 0.875rem;
+        /* Reduce link font size */
+    }
+
+    /* Instagram Feed Box */
+    .instagram-feed .box-title {
+        font-size: 1.25rem;
+    }
+
+    .instagram-feed .instagram-images img {
+        width: 48%;
+        /* Adjust image size for smaller screens */
+        margin-bottom: 0.625rem;
+        /* Add spacing between rows */
+    }
+
+    /* Footer Divider */
+    .insegment-footer-divider {
+        margin: 1.875rem 0;
+    }
+
+    .footer-box {
+        flex-direction: row;
+        /* Stack icon and text vertically */
+        align-items: flex-start;
+        /* Align text to the left */
+        text-align: left;
+        width: 100%;
+        /* Take full width */
+        margin-bottom: 1.25rem;
+    }
+
+    .footer-icon {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .footer-title {
+        font-size: 1.125rem;
+        margin-top: 0;
+    }
+
+    .footer-description {
+        font-size: 0.875rem;
+    }
+
+    /* Right Section: Newsletter and Call */
+    .footer-right {
+        width: 100%;
+        /* Full width for right section */
+        padding: 0;
+        margin-top: 2.5rem;
+    }
+
+    .newsletter h4 {
+        font-size: 1.25rem;
+    }
+
+    .newsletter p {
+        font-size: 1rem;
+        line-height: 2.1875rem;
+    }
+
+    .newsletter-form-container {
+        flex-direction: row;
+        /* Stack input and button vertically */
+        gap: 0.625rem;
+        width: 100%;
+        padding: 0.625rem;
+        /* Maintain padding */
+    }
+
+    .newsletter-input {
+        width: 100%;
+        /* Full width input */
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    .newsletter-signup {
+        width: 40%;
+        /* Full width button */
+        font-size: 0.875rem;
+    }
+
+    .footer-call {
+        margin-top: 1.875rem;
+        flex-direction: row;
+        /* Stack icon and info vertically */
+        align-items: flex-start;
+    }
+
+    .contact-icon {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.625rem;
+        /* Add spacing between icon and text */
+    }
+
+    .call-title {
+        font-size: 0.875rem;
+    }
+
+    .call-number {
+        font-size: 0.875rem;
+    }
+
+
+
+
+    /* Footer 3 Styles */
+    .footer-3 {
+        padding: 0 0.3125rem;
+    }
+
+    .footer-3-content {
+        flex-direction: column;
+        /* Stack left and right sections vertically */
+    }
+
+    .footer-3-left,
+    .footer-3-right {
+        flex: none;
+        /* Reset flex sizing */
+        width: 100%;
+        /* Full width */
+        padding: 0.3125rem 0;
+        /* Add spacing */
+        text-align: center;
+        /* Center align text */
+    }
+
+    .footer-3-left-text,
+    .footer-3-right-text {
+        font-size: 0.875rem;
+        /* Reduce font size */
+    }
+}
+
+
+
+
+
+
+
+
+/* Tablet Devices (iPad Air, iPad Pro, Surface Pro 7) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Navbar Font Size Adjustments */
+    .navbar {
+        font-size: 0.5rem !important;
+        padding: 0 6.875rem;
+    }
+
+    .navbar-left span {
+        font-size: 0.5rem !important;
+    }
+
+    .navbar-center-left span {
+        font-size: 0.5rem !important;
+    }
+
+    .navbar-language span {
+        font-size: 0.5rem !important;
+    }
+
+    /* Navbar-2 Font Size Adjustments */
+    .navbar-2 {
+        font-size: 0.5rem !important;
+        padding: 0.1875rem 2.5rem;
+    }
+
+    .navbar-2-center {
+        padding: 0.1875rem 1.25rem;
+    }
+
+    .navbar-2 .nav-menu a {
+        font-size: 0.5rem !important;
+    }
+
+    .navbar-2 .quote-button {
+        font-size: 0.5rem !important;
+    }
+
+    .navbar-2 .call-title {
+        font-size: 0.625rem !important;
+        padding-bottom: 0.0625rem;
+    }
+
+    .navbar-2 .call-number {
+        font-size: 0.75rem;
+    }
+
+    .navbar-2-left {
+        font-size: 1.5625rem;
+    }
+
+    /* Brand Name Adjustments */
+    .brand-logo i,
+    .brand-info .brand-name {
+        font-size: 1.5625rem !important;
+    }
+
+    /* Search Button Adjustments */
+    .search-button i {
+        font-size: 0.5rem !important;
+    }
+
+    .contact-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .features-container-2 {
+        flex-direction: row;
+        /* Ensure row layout */
+        flex-wrap: wrap;
+        /* Allow wrapping to the next line */
+        gap: 1.25rem;
+        padding: 0 1.25rem;
+        /* Adjust padding for tablets */
+        justify-content: space-between;
+        /* Spread items evenly */
+    }
+
+    /* Feature Box */
+    .feature-box {
+        width: calc(50% - 1.25rem);
+        /* Two boxes per row with gaps */
+        padding: 1.25rem;
+        /* Slightly reduce padding for better fit */
+        padding-top: 0 !important;
+    }
+
+    /* Icon Styling */
+    .feature-icon {
+        margin-bottom: 0.9375rem;
+        padding: 1.375rem;
+        border-radius: 0.625rem;
+        /* Maintain a balanced look */
+    }
+
+    /* Heading Styling */
+    .feature-box h4 {
+        font-size: 1.375rem;
+        /* Slightly smaller font size for headings */
+        margin-bottom: 0.75rem;
+    }
+
+    /* Paragraph Styling */
+    .feature-box p {
+        font-size: 0.9375rem;
+        /* Slightly smaller paragraph text */
+        margin-bottom: 1.25rem;
+    }
+
+    /* Button Styling */
+    .learn-more-btn {
+        font-size: 0.9375rem;
+        /* Adjust button font size */
+        padding: 0.45rem 1.4rem;
+        /* Slightly smaller padding */
+    }
+
+    .contact-icon i {
+        font-size: 1.25rem;
+    }
+
+    .footer {
+        padding: 1.875rem;
+        font-size: 1rem;
+        /* Slightly larger font size for better readability */
+    }
+
+    /* Footer 2 styles */
+    .footer-2 {
+        flex-direction: column;
+        /* Stack sections vertically */
+        padding: 3.125rem 1.875rem;
+    }
+
+    /* Left Section: Footer Boxes */
+    .footer-left {
+        width: 100%;
+        /* Take full width */
+    }
+
+    .flex-container {
+        flex-direction: column;
+        /* Stack flex boxes vertically */
+        gap: 1.5625rem;
+        /* Maintain spacing between boxes */
+    }
+
+    .flex-box {
+        width: 100%;
+        /* Full width for each flex box */
+    }
+
+    /* Brand Description Box */
+    .brand-description .box-title {
+        font-size: 2rem;
+        /* Slightly larger title size */
+    }
+
+    .brand-description .box-description {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .social-icons a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Quick Links Box */
+    .quick-links .box-title {
+        font-size: 1.5rem;
+    }
+
+    .quick-links .links-list a {
+        font-size: 1rem;
+        /* Adjust link font size */
+    }
+
+    /* Instagram Feed Box */
+    .instagram-feed .box-title {
+        font-size: 1.5rem;
+    }
+
+    .instagram-feed .instagram-images img {
+        width: 32%;
+        /* Adjust image size for tablet screens */
+        margin-bottom: 0.9375rem;
+        /* Add spacing between rows */
+    }
+
+    /* Footer Divider */
+    .insegment-footer-divider {
+        margin: 2.5rem 0;
+    }
+
+    .footer-box {
+        flex-direction: row;
+        /* Stack icon and text horizontally */
+        align-items: center;
+        /* Center align icon and text */
+        text-align: left;
+        width: 100%;
+        /* Take full width */
+        margin-bottom: 1.5625rem;
+    }
+
+    .footer-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    .footer-title {
+        font-size: 1.2rem;
+        margin-top: 0.3125rem;
+    }
+
+    .footer-description {
+        font-size: 1rem;
+    }
+
+    /* Right Section: Newsletter and Call */
+    .footer-right {
+        width: 100%;
+        /* Full width for right section */
+        padding: 0;
+        margin-top: 3.125rem;
+    }
+
+    .newsletter h4 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .newsletter-form-container {
+        flex-direction: row;
+        /* Keep input and button side-by-side */
+        gap: 0.9375rem;
+        width: 100%;
+        /* Full width */
+        padding: 0.9375rem;
+        /* Maintain padding */
+    }
+
+    .newsletter-input {
+        width: 70%;
+        /* Adjust width of input */
+        font-size: 1rem;
+        padding: 0.625rem;
+    }
+
+    .newsletter-signup {
+        width: 30%;
+        /* Adjust width of button */
+        font-size: 1rem;
+    }
+
+    .footer-call {
+        margin-top: 2.5rem;
+        flex-direction: row;
+        /* Keep icon and info side-by-side */
+        align-items: center;
+    }
+
+    .contact-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        margin-right: 0.9375rem;
+    }
+
+    .call-title {
+        font-size: 1rem;
+    }
+
+    .call-number {
+        font-size: 1rem;
+    }
+
+    /* Footer 3 Styles */
+    .footer-3 {
+        padding: 0.625rem 1.25rem;
+    }
+
+    .footer-3-content {
+        flex-direction: column;
+        /* Stack left and right sections vertically */
+    }
+
+    .footer-3-left,
+    .footer-3-right {
+        flex: none;
+        /* Reset flex sizing */
+        width: 100%;
+        /* Full width */
+        padding: 0.625rem 0;
+        /* Add spacing */
+        text-align: center;
+        /* Center align text */
+    }
+
+    .footer-3-left-text,
+    .footer-3-right-text {
+        font-size: 1rem;
+        /* Slightly larger font size */
+    }
+}
