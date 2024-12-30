@@ -675,28 +675,302 @@ body {
     background-color: #013d90;
 }
 
-/* Right Side Styling */
+/* Styling for the About Section Right Side */
 .about-section-side-2 {
-    flex: 1;
-    /* Equal width as the left side */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%; /* Adjust based on your layout */
+    flex: 1;
+    padding: 3rem;
     background-color: white;
+    border-radius: 0.625rem !important;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
 }
 
-.about-section-side-2 img {
-    max-width: 100%;
-    /* Responsive image */
-    height: auto;
-    border-radius: 0.625rem;
-    /* Rounded corners for the image */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+/* About Image Container */
+.about-image-container {
+    width: 100%; /* Make the image container take the full width */
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between image and next section */
+    background-color: #F2F5F9;
 }
+
+.about-image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the div without stretching */
+    border-radius: 10px;
+}
+
+/* Stats Container */
+.about-stats-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of the boxes */
+    gap: 20px;
+    width: 100%;
+}
+
+/* Stats Box */
+.about-stats-box {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background-color: #F2F5F9;
+    padding: 16px;
+    width: calc(50% - 10px); /* Two boxes per row */
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Stat Title */
+.about-stats-box h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #015FC9;
+    font-family: "Inter", sans-serif !important;
+    line-height: 1.5;
+    margin-bottom: 0rem !important;
+}
+
+/* Stat Description */
+.about-stats-box p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #16243d !important;
+    margin-bottom: 0rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+
 
 /* About Section General Styles Ends Here */
+
+
+/* Services Section CSS */
+.services-section {
+    background-color: white;
+    padding: 3.125rem 5rem;
+    /* Light gray background for the parent section */
+}
+
+.services-container {
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 3.125rem 7.8125rem;
+}
+
+.services-feature-container {
+    padding: 0rem !important;
+}
+
+.services-feature-container .services-box {
+    padding: 0rem 0rem !important;
+    background-color: #f2f5f9;
+}
+
+/* Service Icon Styling */
+.services-feature-container .services-box .services-icon {
+    position: relative;
+    overflow: hidden; /* Hide any part of the overlay that goes beyond the container */
+    padding: 0rem !important;
+}
+
+.services-feature-container .services-box .services-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Hover effect: Light blue transparent curtain */
+.services-feature-container .services-box .services-icon::after {
+    content: "";
+    position: absolute;
+    top: -100%; /* Initially positioned above the element */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 165, 255, 0.2); /* Light blue color with transparency */
+    transition: top 0.5s ease; /* Smooth sliding effect */
+    z-index: 1; /* Place above the image */
+}
+
+.services-feature-container .services-box:hover .services-icon::after {
+    top: 0; /* Move the overlay down to cover the image */
+}
+
+.services-feature-container .services-box .services-icon img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.services-container h2 {
+    font-size: 1.5rem;
+    color: #015fc9;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.services-container h3 {
+    font-size: 3.5rem;
+    color: #16243d;
+    margin-bottom: 1.25rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+}
+
+.services-container p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+
+/* Features Container */
+.services-feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: space-between;
+    padding: 0 2.125rem;
+    border-radius: 10px;
+}
+
+/* Service Box */
+.services-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(25% - 1.0625rem);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    padding-top: 0;
+    transition: transform 0.5s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.services-box:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.2);
+    background-color: #015FC9;
+}
+
+/* Service Icon Styling */
+.services-icon {
+    margin-bottom: 0.9375rem;
+    color: #015fc9;
+    position: relative;
+    background-color: #F2F5F9;
+    padding: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+/* Pseudo-element for the curtain effect */
+.services-icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #16243d;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+.services-box:hover .services-icon::after {
+    transform: translateY(0);
+}
+
+.services-icon i {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.services-box:hover .services-icon i {
+    color: #ffffff;
+}
+.services-content{
+    padding: 1.5rem;
+}
+/* Heading Styling */
+.services-box h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #16243d;
+    transition: color 0.3s;
+}
+
+.services-box:hover h4 {
+    color: #ffffff;
+}
+
+/* Paragraph Styling */
+.services-box p {
+    margin-bottom: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+    transition: color 0.3s;
+}
+
+.services-box:hover p {
+    color: white;
+}
+
+/* Read More Button Styling */
+.read-more-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #015fc9;
+    color: #ffffff;
+    border: none;
+    border-radius: 50rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Inter", sans-serif;
+}
+
+.read-more-btn:hover {
+    background-color: #16243d;
+    color: white;
+}
+
+.services-box:hover .read-more-btn {
+    background-color: #ffffff;
+    color: #015fc9;
+}
+
+
 
 
 

@@ -105,6 +105,117 @@
         /* Adjust padding for smaller buttons */
     }
 
+    /* About Section */
+    .about-section {
+        flex-direction: column; /* Stack the content vertically */
+        padding: 2rem; /* Reduced padding for smaller screens */
+        gap: 2rem; /* Increased gap between elements */
+    }
+
+    /* Left Side Styling */
+    .about-section-side-1 {
+        width: 100%; /* Full width on mobile */
+        padding: 2rem; /* Reduced padding for mobile */
+        background-color: white;
+        border-radius: 0.625rem !important;
+    }
+
+    /* Headings */
+    .about-section-side-1 h2 {
+        font-size: 1.25rem; /* Smaller heading on mobile */
+        margin-bottom: 1rem;
+    }
+
+    .about-section-side-1 h1 {
+        font-size: 2.5rem; /* Reduced font size for mobile */
+        margin-bottom: 1rem;
+    }
+
+    .about-section-side-1 p {
+        font-size: 1rem; /* Reduced font size */
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    /* List Items */
+    .about-section-side-1 ul {
+        padding: 0;
+        margin: 1.25rem 0;
+    }
+
+    .about-section-side-1 li {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-section-side-1 li i {
+        margin-right: 0.625rem;
+        font-size: 1.2rem;
+    }
+
+    /* Learn More Button */
+    .about-section-side-1 .learn-more-btn {
+        font-size: 1rem;
+        padding: 0.75rem 2rem;
+        border-radius: 50rem !important;
+    }
+
+    .about-section-side-1 .learn-more-btn:hover {
+        background-color: #013d90;
+    }
+
+    /* Right Side Styling */
+    .about-section-side-2 {
+        width: 100%; /* Full width on mobile */
+        padding: 2rem; /* Reduced padding for mobile */
+    }
+
+    /* About Image Container */
+    .about-image-container {
+        margin-bottom: 1.5rem; /* Space below the image */
+    }
+
+    .about-image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Stats Container */
+    .about-stats-container {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    /* Stats Box */
+    .about-stats-box {
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Center the content */
+        padding: 1rem;
+        background-color: #F2F5F9;
+        border-radius: 8px;
+        width: 100%; /* Make sure each flexbox takes full width */
+    }
+
+    /* Stat Title */
+    .about-stats-box h3 {
+        font-size: 1.75rem; /* Smaller font size for mobile */
+        font-weight: 700;
+        color: #015FC9;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Stat Description */
+    .about-stats-box p {
+        font-size: 1rem; /* Reduced font size */
+        color: #16243d;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center; /* Center align for mobile */
+    }
     /*Features Container ends here*/
 
 
