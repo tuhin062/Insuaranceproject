@@ -218,6 +218,96 @@
     }
     /*Features Container ends here*/
 
+    /*services section css starts here */
+    .services-section {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .services-container {
+        padding: 1rem; /* Compact the text content */
+    }
+
+    .services-container h2 {
+        font-size: 1.25rem; /* Adjust heading size */
+    }
+
+    .services-container h3 {
+        font-size: 2rem; /* Reduce size for better readability */
+        margin-bottom: 1rem;
+    }
+
+    .services-container p {
+        font-size: 0.875rem; /* Slightly smaller text */
+        line-height: 1.4; /* Improve readability on smaller screens */
+    }
+
+    /* Services Feature Container */
+    .services-feature-container {
+        flex-direction: column; /* Stack services vertically */
+        gap: 1.5rem; /* Add spacing between the stacked services */
+    }
+
+    .services-box {
+        width: 100%; /* Full width for each service box */
+        margin: 0 auto; /* Center-align if any extra spacing exists */
+    }
+
+    /* Adjust Service Icon Position */
+    .services-icon {
+        top: 10px; /* Adjust position relative to the smaller box */
+        right: 10px;
+        font-size: 1.5em; /* Slightly smaller icon */
+        padding: 0.5rem;
+    }
+
+    /* Adjust Image Styling */
+    .services-img img {
+        width: 100%;
+        height: auto;
+        transform: none; /* No hover zoom for touch screens */
+    }
+
+    .services-img::after {
+        height: 0; /* Prevent hover effects by default on touch screens */
+    }
+
+    .services-box:hover .services-img::after {
+        height: 100%; /* Maintain curtain effect if desired */
+    }
+
+    /* Services Content */
+    .services-content {
+        padding: 1rem; /* Compact content for better spacing */
+    }
+
+    .services-box h4 {
+        font-size: 1.25rem; /* Reduce title size */
+        margin-bottom: 1rem;
+    }
+
+    .services-box p {
+        font-size: 0.875rem; /* Adjust paragraph size */
+        margin-bottom: 1rem;
+    }
+
+    /* Read More Button */
+    .read-more-btn {
+        font-size: 0.875rem; /* Smaller button size */
+        padding: 0.5rem 1rem; /* Adjust padding for compact layout */
+    }
+
+    /* Center Container */
+    .center-container {
+        padding: 1rem;
+        margin-top: 2rem; /* Ensure spacing after the services */
+    }
+
+    .more-services-btn {
+        font-size: 0.875rem; /* Adjust font size */
+        padding: 0.75rem 2rem; /* Compact button */
+    }
+    /* services section ends here */
+
 
     .footer {
         padding: 1.25rem;
