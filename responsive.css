@@ -254,9 +254,9 @@
 
     /* Adjust Service Icon Position */
     .services-icon {
-        top: 10px; /* Adjust position relative to the smaller box */
-        right: 10px;
-        font-size: 1.5em; /* Slightly smaller icon */
+        top: 160px;
+        right: 25px;
+        font-size: 1.2rem;
         padding: 0.5rem;
     }
 
@@ -306,8 +306,59 @@
         font-size: 0.875rem; /* Adjust font size */
         padding: 0.75rem 2rem; /* Compact button */
     }
-    /* services section ends here */
+    /*services section ends here */
+    /* Adjust FAQ Section Layout */
+    .faq-section {
+        flex-direction: column;
+        padding: 6rem 2rem; /* Reduce padding for smaller screens */
+        gap: 2rem;
+    }
 
+    /* Adjust Left Side Styling */
+    .faq-section-side-1 {
+        padding: 0;
+    }
+
+    .faq-section-side-1 h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .faq-section-side-1 h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    /* Adjust Accordion Styles */
+    .faq-section-side-1 .accordion {
+        max-width: 100%; /* Take full width */
+        margin: 0;
+    }
+
+    .faq-section-side-1 .accordion .accordion-item .accordion-header {
+        font-size: 16px;
+        padding: 0.75rem 1rem; /* Reduce padding */
+    }
+
+    .faq-section-side-1 .accordion .accordion-item .accordion-content {
+        font-size: 0.9rem; /* Adjust font size for better readability */
+    }
+
+    /* Adjust Right Side Styling */
+    .faq-section-side-2 {
+        width: 100%; /* Make the image section full-width */
+        align-items: center; /* Center the content */
+    }
+
+    .faq-section-side-2 .about-image-container {
+        width: 100%; /* Ensure image container is full width */
+        border-radius: 8px;
+    }
+
+    .faq-section-side-2 .about-image-container img {
+        width: 100%;
+        height: auto;
+    }
 
     .footer {
         padding: 1.25rem;

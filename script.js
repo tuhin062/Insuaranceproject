@@ -45,3 +45,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+// JavaScript for Smooth Accordion Toggle
+document.querySelectorAll('.faq-section-side-1 .accordion-header').forEach(header => {
+    header.addEventListener('click', function () {
+        const parentItem = this.closest('.accordion-item');
+        const isActive = parentItem.classList.contains('active');
+        
+        // Close all accordion items
+        document.querySelectorAll('.faq-section-side-1 .accordion-item').forEach(item => {
+            item.classList.remove('active');
+            item.querySelector('.accordion-content').style.maxHeight = null;
+        });
+
+        // Open current accordion item if not active
+        if (!isActive) {
+            parentItem.classList.add('active');
+            const content = parentItem.querySelector('.accordion-content');
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    });
+});
+
+// Initialize the first accordion item open
+const firstAccordion = document.querySelector('.faq-section-side-1 .accordion-item.active');
+if (firstAccordion) {
+    const firstContent = firstAccordion.querySelector('.accordion-content');
+    firstContent.style.maxHeight = firstContent.scrollHeight + 'px';
+}
+

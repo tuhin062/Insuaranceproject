@@ -1004,6 +1004,170 @@ body {
 }
 /*Services section css ends here*/
 
+/* FAQ Section General Styles */
+.faq-section {
+    display: flex;
+    flex-direction: row;
+    /* Side-by-side layout */
+    justify-content: space-between;
+    /* Space between flexboxes */
+    align-items: center;
+    /* Vertically align items */
+    padding: 6.125rem 7.1875rem;
+    /* Section padding */
+    background-color: #F2F5F9;
+    /* Light background */
+    gap: 1.25rem;
+    /* Space between flexboxes */
+    padding-bottom: 6.1875rem !important;
+}
+
+/* Left Side Styling */
+.faq-section-side-1 {
+    flex: 1;
+    /* Equal width as the right side */
+    padding: 0rem;
+    /* Add padding inside the side */
+    border-radius: 0.625rem !important;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+.faq-section-side-1 h2 {
+    font-size: 1.5rem;
+    color: #015fc9;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.faq-section-side-1 h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "DM Sans", sans-serif;
+    color: #16243d;
+}
+
+.faq-section-side-1 p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+/* Styling for the About Section Right Side */
+.faq-section-side-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%; /* Adjust based on your layout */
+    flex: 1;
+    padding: 0rem;
+    border-radius: 0.625rem !important;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+/* About Image Container */
+.faq-section-side-2 .about-image-container {
+    width: 100%; /* Make the image container take the full width */
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #F2F5F9;
+}
+
+.faq-section-side-2 .about-image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the div without stretching */
+    border-radius: 10px;
+}
+/* FAQ Section Accordion Styling */
+.faq-section-side-1 .accordion {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #F2F5F9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-section-side-1 .accordion .accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Accordion Header Styling */
+.faq-section-side-1 .accordion .accordion-item .accordion-header {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 18px;
+    text-align: left;
+    color: #015FC9; /* Default blue for non-active */
+    background-color: #F2F5F9; /* Default white for non-active */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section-side-1 .accordion .accordion-item.active .accordion-header {
+    color: white;
+    background-color: #015FC9;
+    transform: translateY(-2px);
+}
+
+/* Accordion Header Hover Effect */
+.faq-section-side-1 .accordion .accordion-item .accordion-header:hover {
+    background-color: rgba(1, 95, 201, 0.8);
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* Accordion Content Styling */
+.faq-section-side-1 .accordion .accordion-item .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+
+
+    border-radius: 10px !important;
+    padding: 0rem 1.25rem;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+.faq-section-side-1 .accordion .accordion-item.active .accordion-content {
+    max-height: 500px; /* Set to a value sufficient to show the content */
+    padding: 1rem 1.25rem;
+    transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+/* FAQ Section General Styles Ends Here */
 
 /* Footer general styles */
 .footer {
