@@ -359,7 +359,83 @@
         width: 100%;
         height: auto;
     }
+        /* Blog Section General */
+    .blogs-section {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
 
+    .blog-description-container {
+        padding: 1rem; /* Compact description container */
+    }
+
+    .blog-description-container h2 {
+        font-size: 1.25rem; /* Smaller heading */
+    }
+
+    .blog-description-container h3 {
+        font-size: 2rem; /* Adjust subheading */
+    }
+
+    .blog-description-container p {
+        font-size: 0.875rem; /* Smaller font size for better readability */
+        line-height: 1.4;
+    }
+
+    /* Blog Container */
+    .blogs-container {
+        flex-direction: column; /* Stack blog boxes vertically */
+        gap: 1.5rem; /* Increase spacing between stacked boxes */
+        padding: 0 1rem; /* Compact padding */
+    }
+
+    /* Blog Box */
+    .blog-box {
+        width: 100%; /* Full width for each blog box */
+    }
+
+    .blog-category {
+        top: 250px; /* Adjust category positioning */
+        padding: 0.375rem 0.75rem; /* Smaller padding */
+        font-size: 0.875rem; /* Adjust font size */
+    }
+
+    /* Blog Content */
+    .blog-content {
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .blog-content .blog-meta {
+        flex-direction: row; /* Stack metadata vertically */
+        align-items: flex-start; /* Align items to the left */
+        gap: 0.5rem; /* Add spacing between stacked items */
+    }
+
+    .blog-content .blog-meta span {
+        font-size: 0.875rem; /* Adjust font size */
+        margin-right: 0px;
+    }
+
+    .blog-box h4 {
+        font-size: 1.25rem; /* Smaller font for titles */
+    }
+
+    .blog-box p {
+        font-size: 0.875rem; /* Adjust font size for paragraph */
+    }
+
+    .read-more-btn {
+        font-size: 0.875rem; /* Smaller button font size */
+        padding: 0.5rem 1rem; /* Adjust button size */
+    }
+
+    /* Blog Image */
+    .blog-img::after {
+        background-color: rgba(1, 95, 201, 0.15); /* Lighter overlay for smaller screens */
+    }
+
+    .blog-img img {
+        transform: none; /* Remove zoom effect on smaller screens for better focus */
+    }
     .footer {
         padding: 1.25rem;
         font-size: 0.875rem;
