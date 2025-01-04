@@ -436,6 +436,110 @@
     .blog-img img {
         transform: none; /* Remove zoom effect on smaller screens for better focus */
     }
+    .team-section {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .team-container {
+        padding: 0 1rem; /* Adjust padding for content */
+    }
+
+    .team-container h2 {
+        font-size: 1.2rem; /* Reduce heading size */
+        margin-bottom: 0.5rem;
+    }
+
+    .team-container h3 {
+        font-size: 2rem; /* Smaller font for main title */
+        margin-bottom: 1rem;
+    }
+
+    .team-container p {
+        font-size: 0.9rem; /* Adjust text size */
+        line-height: 1.4; /* Enhance readability */
+    }
+
+    .team-member-feature-container {
+        flex-direction: column; /* Stack members vertically */
+        gap: 1rem; /* Adjust spacing */
+        padding: 0 1rem;
+    }
+
+    .member-box {
+        width: 100%; /* Full width for each member */
+        border-radius: 0.5rem;
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .member-img {
+        height: 200px; /* Set a fixed height for images */
+    }
+
+    .member-img img {
+        height: 100%;
+        object-fit: cover; /* Ensure image covers the container */
+    }
+
+    .member-content {
+        padding: 1rem; /* Reduce padding inside content */
+    }
+
+    .member-content h4 {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    .member-content h5 {
+        font-size: 0.9rem; /* Adjust subheading size */
+    }
+
+    .social-icons {
+        flex-direction: row; /* Change to a row layout */
+        gap: 1rem; /* Space out icons horizontally */
+        position: static; /* Allow icons to flow naturally */
+        justify-content: center; /* Center the icons */
+        margin-top: 1rem; /* Add spacing above the icons */
+    }
+
+    .social-icons i {
+        font-size: 1.2rem; /* Smaller icon size */
+        padding: 0.5rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    .member-box:hover .social-icons {
+        top: auto; /* Disable hover animation for icons */
+    }
+
+    .member-box:hover .member-img img {
+        transform: none; /* Remove image zoom on hover for better UX */
+    }
+
+    .member-box:hover .member-content {
+        transform: none; /* Remove hover animations for simplicity */
+        box-shadow: none; /* No hover shadow */
+    }
+
+    .member-box:hover .member-content::after {
+        height: 0; /* Disable hover background fill */
+    }
+    
+    .slider-controls {
+        top: 6%;
+    }
+    .testimonial-box {
+        display: flex;
+        flex: 0 0 100%; /* Ensure the testimonial box takes full width on mobile */
+        flex-direction: row; /* Stack the image and content vertically */
+        align-items: center;
+        background: #F2F5F9;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 1rem; /* Add some space between boxes for better spacing */
+    }
+    .testimonial-img img {
+        width: 14.875rem;}
+
     .footer {
         padding: 1.25rem;
         font-size: 0.875rem;

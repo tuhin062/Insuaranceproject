@@ -1440,24 +1440,66 @@ body {
 
 
 /* Service Icon Styling */
-.social-icon {
+.member-box .social-icons {
     position: absolute;
-    top: 180px;
-    right: 26px;
-    padding: 0.5rem;
-    background-color: #f2f5f9;
-    color: #015FC9;
-    transition: transform 0.6s, background-color 0.3s;
-    border-radius: 50%;
-    font-size: 0.5em;
-    transform: none; /* Remove any existing transform */
+    top: 100%; /* Start outside the box */
+    right: 35px; /* Position to the right of the box */
+    display: flex;
+    flex-direction: column; /* Arrange icons in a column */
+    gap: 0.5rem; /* Space between icons */
+    transition: top 0.6s ease-in-out; /* Smooth float-up effect */
+    z-index: 1; /* Ensure icons are above other content */
 }
 
-/* Flip animation on hover */
-.member-box:hover .social-icon {
-    background-color: #015FC9;
-    color: #f2f5f9  ;
+.member-box .social-icons i {
+    padding: 0.5rem;
+    background-color: #f2f5f9;
+    color: #015fc9;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+.member-box:hover .social-icons {
+    top: 88px; /* Move icons up to the image */
+}
+
+.member-box:hover .social-icons i {
+    background-color: #015fc9;
+    color: #f2f5f9;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    width: 34px;
+    height: 34px;
+    border-radius: 50rem !important;
+    margin-bottom: .1rem !important;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem;
+}
+
+.member-box:hover .social-icons i:hover {
+    background-color: #16243D;
+    color: #f2f5f9;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Ensure icons do not overlap with the content */
+.member-box .member-content {
+    z-index: 2; /* Keep the content above the icons */
+}
+
+/* Adjust the hover effect for the image curtain */
+.member-box:hover .member-img::after {
+    z-index: 0; /* Icons appear behind the curtain */
+}
+
 
 /* Added this line to target the <i> element for rotation */
 .member-box:hover .social-icon i {
@@ -1525,6 +1567,7 @@ body {
 
 /* Service Image Styling */
 .member-img {
+    width: 100%; /* Matches the width of the member-box */
     overflow: hidden;
     position: relative;
 }
@@ -1552,12 +1595,158 @@ body {
     display: block;
     transition: transform 0.5s ease-in-out;
     background-color: white;
+    object-fit: cover; /* Ensures the image fills the container without distortion */
 }
 
 .member-box:hover .member-img img {
     transform: scale(1.05); /* Slight zoom */
 }
 /*Our team section css ends here*/
+
+
+/* Testimonial Section Styling */
+.testimonial-feature-container {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem auto;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.testimonial-box {
+    display: flex;
+    flex: 0 0 50%; /* Two testimonials per view */
+    align-items: center;
+    background: #F2F5F9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.testimonial-img {
+    flex: 1;
+    max-width: 25%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex; /* Ensure proper alignment of the image */
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-img img {
+    width: 183px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimonial-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem !important;
+}
+
+.testimonial-content h4 {
+    color: #16243d;
+
+
+    margin-bottom: 0 !important;
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left !important;
+}
+
+.testimonial-content h5 {
+    margin-bottom: 1rem !important;
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+.rating-stars {
+    color: #015fc9 !important;
+        margin-bottom: 1rem;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+}
+
+.testimonial-content p {
+    margin-bottom: 0 !important;
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+}
+
+/* Adjusted Slider Controls */
+.slider-controls {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slider-control {
+    position: relative;
+    background: #015fc9;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+  
+    padding: 5px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.slider-control:hover {
+    background: #16243d;
+}
+
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+
+
+
+
 
 /* Footer general styles */
 .footer {
