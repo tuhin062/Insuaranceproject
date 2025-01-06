@@ -1,3 +1,4 @@
+
 // Javscript to make navbar 2 sticky on top in scrolling
     document.addEventListener("DOMContentLoaded", () => {
         const navbar1 = document.querySelector(".navbar");
@@ -150,3 +151,47 @@ window.addEventListener('resize', () => {
 
 // Add event listener for the transition end to handle infinite loop logic
 slider.addEventListener('transitionend', handleTransitionEnd);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
