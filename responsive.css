@@ -38,7 +38,6 @@
   #carouselExampleCaptions {
     height: 100vh; /* Adjusted height for smaller screens */
     background-color: #014CA1;
-    width: 100vw;
   }
 
   .carousel-inner {
